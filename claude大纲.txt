@@ -1,0 +1,45 @@
+
+//Claude Code使用问题
+90% 网络原因。干净的vpn（多切换节点试试），自己搭建网络（最稳，最麻烦）
+
+
+//Claude Code安装方式
+wsl
+
+
+//浏览器自动化（复用当前已登录账号）
+Chrome DevTools MCP（谷歌）
+chrome://inspect/#remote-debugging 勾选
+
+
+
+//手机端claude 远程控制电脑cc（类似龙虾）
+https://code.claude.com/docs/zh-CN/remote-control
+
+条件：
+cc版本 > 2.1.138 (Claude Code)
+官方订阅
+
+步骤：
+	1. 命令  /remote-control
+	2. 启动后，会输出一段链接，可以在任何设备用这个链接控制电脑
+	3. 或者在claude 手机端，左侧打开 code，就能看到开启的远程连接，点击进入控制电脑
+	4. 关闭会话，直接断开连接
+
+
+
+//常用命令补充
+压缩上下文
+/compact
+
+清理上下文
+/clear 
+
+启动 bypass permissions on 模式
+claude --dangerously-skip-permissions "在吗"
+
+查询历史对话
+/resume
+
+查看当前上下文使用情况
+/context
