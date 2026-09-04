@@ -8,6 +8,7 @@
 | --- | --- |
 | [claude大纲.txt](claude大纲.txt) | Claude Code 安装、网络、使用问题速记 |
 | **[cloudflare/](cloudflare/)** | **Cloudflare 实战：从零构建全栈应用 + 认知框架与踩坑** |
+| **[mcp-usage/](mcp-usage/)** | **MCP 服务器使用指南** |
 
 ### cloudflare/
 
@@ -18,12 +19,19 @@
 
 **建议阅读顺序**：先看 02 建立整体认知（尤其「中国大陆访问的真相」一节），再照 01 动手。
 
+### mcp-usage/
+
+| 文档 | 内容 |
+| --- | --- |
+| [chrome-devtools.md](mcp-usage/chrome-devtools.md) | 让 WSL 里的 Claude Code 控制 Windows 端**已登录**的 Chrome：`chrome://inspect` + `--autoConnect` 自动发现端口、Mirrored 网络要求、排查清单、与 Playwright MCP 的取舍 |
+
 ## 关于脱敏
 
-两份文档由真实项目记录整理，域名、IP、账号 ID 已替换为占位符：
+所有文档由真实项目记录整理，域名、IP、账号 ID、本机用户名已替换为占位符：
 
 - IP 用 RFC 5737 文档专用段 `203.0.113.0/24`
 - 域名统一为 `example.com`
 - 各类 ID 为 `<ACCOUNT_ID>` / `<DATABASE_ID>` 等
+- 本机路径中的用户名为 `<你的用户名>`
 
 **所有命令、配置、报错信息、实测数据均为真实内容，未做改动。**
